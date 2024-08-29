@@ -1,325 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-      .container {
-        display: flex;
-        justify-content: center;
-      }
-      .content {
-        width: 50%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Article</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      .profile-info{
-        display: flex;
-        align-items: center;
-        margin: 1.5em 0;
-      }
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
 
-      .profile-info .wrapper-info{
-        display: flex;
-        flex-direction: column;
-        gap: 0.3em;
-      }
+    .content {
+      width: 50%;
+    }
 
-      .profile-info .name{
-        font-family: sans-serif;
-        font-size: 13px;
-      }
+    .profile-info {
+      display: flex;
+      align-items: center;
+      margin: 1.5em 0;
+    }
 
-      .follow{
-        color: lightgreen;
-      }
+    .profile-info .wrapper-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3em;
+    }
 
-      .profile-info .date{
-        font-family: sans-serif;
-        font-size: 10px;
-      }
+    .profile-info .name {
+      font-family: sans-serif;
+      font-size: 13px;
+    }
 
-      .wrapper-info{
-        display: inline;
-      }
+    .follow {
+      color: lightgreen;
+    }
 
-      .nav-profile{
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5em 0;
-        border: 1px solid gray;
-        border-left: 0;
-        border-right: 0;
-      }
+    .profile-info .date {
+      font-family: sans-serif;
+      font-size: 10px;
+    }
 
-      .icon{
-        display: flex;
-        gap: 5px;
-      }
+    .wrapper-info {
+      display: inline;
+    }
 
-      .side{
-        display: inherit;
-        gap: 1.5em;
-      }
-      .article{
-        margin: 2em 0;
-      }
-      .written{
-        font-style:italic 
-      }
+    .nav-profile {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 0;
+      border: 1px solid gray;
+      border-left: 0;
+      border-right: 0;
+    }
 
-      .written .name{
-        color: lightgreen;
-      }
+    .icon {
+      display: flex;
+      gap: 5px;
+    }
 
-      .article-picture, .ads{
-        width: 100%;
-        object-fit: cover;
-      }
+    .side {
+      display: inherit;
+      gap: 1.5em;
+    }
 
-      h3{
-        font-family: sans-serif;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="container">
-      <section class="content">
-        <header>
-          <h1></h1>
-          <!-- Header -->
-          <div class="profile-info">
-            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg" alt="Profile" width="50" class="picture-profile"/>
-            <!-- Img Profile -->
-            <div class="wrapper-info">
-              <span class="name">Malter Loller-Andersen &#xb7; <span class="follow">Follow</span></span>
-              <span class="date">13 min read &#xb7; Dec 28,2018</span>
+    .article {
+      margin: 2em 0;
+    }
+
+    .written {
+      font-style: italic
+    }
+
+    .written .name {
+      color: lightgreen;
+    }
+
+    .article-picture,
+    .ads {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    h3 {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="content">
+      <header>
+        <h1></h1>
+        <!-- Header -->
+        <div class="profile-info">
+          <img
+            src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+            alt="Profile" width="50" class="picture-profile" />
+          <!-- Img Profile -->
+          <div class="wrapper-info">
+            <span class="name">Malter Loller-Andersen &#xb7; <span class="follow">Follow</span></span>
+            <span class="date">13 min read &#xb7; Dec 28,2018</span>
+          </div>
+        </div>
+        <nav class="nav-profile">
+          <div class="nav-left side">
+            <div class="like-icon icon">
+              <i><i class="fa-solid fa-hands-clapping"></i></i>
+              <span>670</span>
+            </div>
+            <div class="comment-icon icon">
+              <i><i class="fa-regular fa-comment"></i></i>
+              <span>3</span>
             </div>
           </div>
-          <nav class="nav-profile">
-            <div class="nav-left side">
-                <div class="like-icon icon">
-                    <i><i class="fa-solid fa-hands-clapping"></i></i>
-                    <span>670</span>
-                  </div>
-                  <div class="comment-icon icon">
-                    <i><i class="fa-regular fa-comment"></i></i>
-                    <span>3</span>
-                  </div>
+
+          <!-- Justify-space-between -->
+
+          <div class="nav-right side">
+            <div class="bookmark-icon icon">
+              <i><i class="fa-regular fa-bookmark"></i></i>
             </div>
 
-            <!-- Justify-space-between -->
+            <div class="play-icon icon">
+              <i><i class="fa-regular fa-circle-play"></i></i>
+            </div>
 
-           <div class="nav-right side">
-            <div class="bookmark-icon icon">
-                <i><i class="fa-regular fa-bookmark"></i></i>
-              </div>
-  
-              <div class="play-icon icon">
-                <i><i class="fa-regular fa-circle-play"></i></i>
-              </div>
-  
-              <div class="upload-icon icon">
-                <i><i class="fa-solid fa-upload"></i></i>
-              </div>
-           </div>
-          </nav>
-        </header>
+            <div class="upload-icon icon">
+              <i><i class="fa-solid fa-upload"></i></i>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-        <!-- Article -->
-        <article class="article">
-            <!-- Written -->
-          <span class="written"
-            >Co-written by:
-            <span class="name"
-              >Eirik Folkestad, Manu Gopinathan & Oyvind Nygard</span
-            ></span
-          >
+      <!-- Article -->
+      <article class="article">
+        <!-- Written -->
+        <span class="written">Co-written by:
+          <span class="name">Eirik Folkestad, Manu Gopinathan & Oyvind Nygard</span></span>
 
-          <!-- Article Content -->
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
-            unde laboriosam corrupti earum iusto, fugit architecto voluptatibus.
-            Eligendi culpa itaque perspiciatis, sit error inventore alias quod
-            nesciunt! Nam nihil doloremque ut dicta facere ipsa enim possimus
-            vero. Autem laudantium, consectetur dicta ipsam cupiditate odit.
-            Iusto error quisquam suscipit omnis? Placeat iste quibusdam nemo
-            magnam asperiores quas adipisci exercitationem quae quo atque
-            molestias ut, incidunt, vitae id, et sequi ipsam error dolores autem
-            officiis. Vero nostrum quia magni ullam expedita consequatur,
-            repellendus eius provident, labore corporis pariatur est aperiam,
-            reiciendis consectetur libero? Temporibus omnis harum illo dolorum.
-            Nostrum consequuntur ducimus ab.
-          </p>
-          <h3>Practical Prediction And Application of AI</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eos
-            nemo natus eum veritatis corrupti maxime, maiores adipisci omnis.
-            Laborum explicabo quidem illo aut incidunt sint autem placeat nulla
-            totam quo voluptates soluta deserunt, tempora deleniti itaque
-            eligendi adipisci eaque expedita, eveniet ipsa ab aspernatur dolores
-            facilis. Quo, ad quos.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            vero quo reprehenderit iusto magni dolorum laborum eaque, itaque
-            consequuntur quae nemo quasi? Assumenda ducimus nemo aspernatur rem
-            tempora molestias rerum qui, ipsum magnam officiis autem aut
-            exercitationem provident labore distinctio dolor consectetur facere
-            in dolore ex accusamus ad velit. Accusantium veritatis fugit ex et
-            dicta corrupti inventore quos libero eaque at, asperiores harum
-            mollitia hic quod quas laudantium vel accusamus voluptatem quo qui
-            cum maxime adipisci molestias sit? Doloremque nam placeat tempore,
-            eos nemo aspernatur eum repudiandae adipisci ipsum at consequatur
-            eaque. Ea molestiae nemo nisi ullam quibusdam distinctio fuga hic
-            obcaecati beatae! Velit suscipit aliquid a error repudiandae in nemo
-            placeat. Doloribus corporis sequi eligendi sit laboriosam. Ullam,
-            est.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-            blanditiis itaque ipsa ipsam esse ratione quia distinctio ad id
-            deserunt? Sequi tenetur, facilis molestiae delectus dolores in quod
-            repudiandae praesentium exercitationem earum temporibus atque enim.
-            Iure illum doloribus nihil impedit!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            optio hic sed vel molestias qui possimus corrupti tenetur ipsa
-            consequuntur, ipsam veniam eius quae molestiae consectetur provident
-            reprehenderit aliquid cumque a quo velit atque laudantium magni.
-            Sequi harum, dolore perferendis eius corporis dicta similique quam
-            nobis quibusdam impedit. Deleniti iste fuga quaerat modi quod? Nam
-            est assumenda voluptatum, earum, quisquam perferendis nostrum fuga
-            corporis, natus enim laudantium sequi. Exercitationem libero
-            eligendi odit eos maxime tempore similique dolore ut dolor est
-            deserunt voluptate debitis, ab quasi voluptas perferendis
-            consectetur, culpa itaque, fugiat ex minus vel nihil sit? Beatae
-            aspernatur qui, dolorem eos quibusdam tempore? Corporis, inventore
-            eos dicta illo provident accusantium. Voluptatum nulla maxime
-            temporibus et veritatis cum harum aliquam perspiciatis.
-          </p>
-          <img src="img1.webp" alt="img-article" class="article-picture" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            totam iure facere similique. Enim tempore quos explicabo modi
-            accusantium vitae voluptatum laboriosam repudiandae cupiditate quis?
-            Rem debitis necessitatibus doloribus quibusdam eius id qui ex quis
-            aut neque, beatae tempora modi labore nihil nisi sint quasi? Ea
-            assumenda aliquam eligendi possimus mollitia sint. Veniam
-            reiciendis, voluptatum, placeat alias voluptas suscipit quod non
-            impedit ducimus repellat perspiciatis optio dolores quidem quisquam
-            aperiam! Illo magni ex sequi iure repudiandae soluta provident
-            laboriosam accusamus rerum laudantium? Id unde iure earum tenetur
-            expedita fuga dignissimos excepturi laudantium aut. Facere quibusdam
-            libero facilis quasi delectus distinctio, aperiam eum blanditiis
-            doloribus accusamus architecto sint corrupti reiciendis iusto enim
-            accusantium laborum atque, impedit, at repellendus! Cumque eos dicta
-            fugiat, unde perspiciatis ut vero nam molestiae quos obcaecati cum
-            ipsa nihil laboriosam dolor, aspernatur excepturi at reprehenderit.
-            Eaque quibusdam quia magnam nihil fugit omnis repellendus autem
-            aperiam a? Maxime quasi laboriosam maiores cum labore vitae officiis
-            dolorem ab reprehenderit! Natus iste ratione ipsa? Commodi corrupti
-            quaerat veritatis omnis qui dolore quam non nulla eum, praesentium
-            deserunt saepe molestias perferendis?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo odit
-            minus animi ea fugit dicta itaque deserunt sint consequatur,
-            dignissimos magnam perferendis reprehenderit dolor ab error!
-            Laboriosam quaerat impedit unde aliquam voluptatem, ipsam numquam
-            architecto dicta asperiores, quae voluptate sed qui repellat aliquid
-            aut labore! Repudiandae itaque id doloremque libero exercitationem
-            veritatis repellat omnis sequi accusamus ex suscipit a voluptatum
-            esse, consequuntur voluptate. Rerum, quo molestias, adipisci
-            assumenda dicta rem blanditiis voluptatem odio reprehenderit numquam
-            aut quos. Ratione atque optio provident, quam enim temporibus
-            numquam maxime minus, ut perferendis voluptatem dolore repellat
-            facilis impedit fugit debitis nesciunt accusamus, illum tenetur
-            quaerat doloribus nihil sit. Harum maxime quo odit non maiores
-            placeat sed architecto modi totam pariatur inventore ullam nisi,
-            obcaecati aspernatur expedita minima iusto, quod aperiam voluptate,
-            unde ut quam.
-          </p>
-          <h3>Optimization and Robutness of Deep Learning</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-            quidem consequatur, debitis odio doloremque quis exercitationem
-            magni non tempora aliquam aut praesentium provident totam blanditiis
-            unde illum odit. Quos, provident.
-            <a href=""
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, quidem.</a
-            >
-          </p>
-          <img src="img2.webp" alt="" class="ads" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
-            dignissimos expedita, at in perspiciatis odit autem eveniet
-            consectetur incidunt, soluta sed numquam beatae rerum magni corporis
-            quasi eum harum voluptatem est quas laudantium perferendis culpa
-            distinctio ad. Excepturi perferendis numquam, aliquid placeat quis
-            laborum rerum iste vero possimus nostrum ipsa.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            officiis pariatur soluta earum non autem dolorem? Consectetur
-            aperiam et, molestiae veritatis, accusamus nesciunt esse neque
-            tenetur quos labore voluptatem rerum, excepturi adipisci at quidem
-            sed nihil. Atque maxime quod architecto alias perferendis iure
-            repellendus quia sit inventore mollitia illum dignissimos quibusdam
-            necessitatibus, modi aliquam nisi, provident fugit vel ex? Autem
-            beatae dolore ab et! Consequatur soluta est et cum natus eligendi
-            similique. Dolorum quas ducimus, voluptas non facere impedit minima!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-            omnis architecto totam atque delectus, ad nesciunt error ea magni
-            hic blanditiis repellendus. Vero totam ipsum placeat blanditiis,
-            expedita qui quisquam recusandae ut necessitatibus explicabo odio
-            corrupti pariatur aspernatur libero ad eaque, vel adipisci saepe
-            molestiae soluta doloremque! Fuga mollitia doloremque rerum culpa
-            accusantium exercitationem impedit, quia debitis optio vero
-            consectetur illo sint molestias odio facilis laudantium id ab
-            possimus saepe excepturi ipsa natus praesentium. Ut autem vitae
-            corporis, ab, temporibus cupiditate optio facilis officiis
-            blanditiis maxime alias omnis quidem dolores aut provident iusto
-            officia itaque illo perferendis possimus sit voluptate? Deserunt
-            accusamus unde aspernatur praesentium. Ipsam eveniet cumque soluta
-            voluptates quis sint nihil alias error deleniti magni, numquam ullam
-            enim blanditiis. Nam eveniet amet possimus saepe consequatur et,
-            inventore minus?
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            deleniti, corrupti dolorum officiis corporis sequi dolorem
-            praesentium architecto id perspiciatis, vel exercitationem harum!
-            Laudantium alias ex repellendus esse fuga, quae repellat debitis
-            porro molestiae non modi provident id sit sed labore amet ea qui
-            asperiores sequi incidunt eligendi ad numquam? Facilis temporibus
-            excepturi dolores reprehenderit voluptatum deleniti necessitatibus
-            debitis dicta perferendis quaerat quisquam, alias nobis nemo quidem
-            labore obcaecati atque error quasi culpa natus consectetur
-            similique? Eum sit voluptatum eaque maxime quia aspernatur nihil
-            maiores ipsum blanditiis provident, animi neque nesciunt doloribus
-            voluptas delectus. Quos sed expedita voluptatibus iusto odit.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            mollitia iure totam odit. Veritatis ab dolorem atque dolorum rerum
-            minus, itaque aliquam? Eum nulla reprehenderit magni ea dignissimos
-            culpa quis voluptatem similique repellat, nostrum unde, eveniet
-            possimus molestiae illo quae! Architecto praesentium sequi incidunt
-            beatae molestiae quasi, nihil pariatur placeat facilis harum
-            perferendis doloribus atque animi numquam quod itaque nobis laborum!
-            Esse quam repellat id culpa voluptatibus ea temporibus! Hic, sed
-            dolor quidem alias delectus incidunt vel nulla ea quis.
-          </p>
-          <p>pppppp</p>
-        </article>
-      </section>
-    </main>
-  </body>
+        <!-- Article Content -->
+        <p>
+          In the last decade, the area of artificial intelligence (AI) has exploded with interesting and promising
+          results. With major achievements in image recognition, speech recognition and highly complex games, AI
+          continues to disrupt society. This blog post will discuss practical applications of AI, optimization and
+          interpretability of deep learning models and reinforcement learning (RL), based on the 2018 REWORK Deep
+          Learning Summit in Toronto. Four software engineers from Knowit had the pleasure of travelling to Canada to
+          attend this conference, and with renowned speakers such as Geoff Hinton attending, it turned out be an
+          insightful experience.
+
+        </p>
+        <h3>Practical Predictions and Applications of AI</h3>
+        <p>
+          Early AI revolved around perceiving, deciding and acting. Today, the addition of learning is also in place,
+          but due to the non-deterministic nature of the real world, decisions cannot be made purely from the facts that
+          are given. Further development of AI will require improvements in a variety of areas. Andrew W. Moore, Dean of
+          the School of Computer Science at Carnegie Mellon, shared his thoughts on what he thinks will be important.
+        </p>
+        <p>
+          Firstly, game theory provides an improvement to the decision making capabilities of an AI model, as the most
+          probable answer is not always the correct answer. This can be explained from his example of an AI trying to
+          predict the whereabouts of poachers in a national park. At first, the AI performed well at predicting the
+          location of poachers, however, after a while the poachers in the national park learned from this and went to
+          less obvious locations. As a result of this, the AI degenerated in performance. To improve the AI, game theory
+          was introduced. By viewing the poachers as other players in a game, the AI was able to predict where the
+          poachers were located even though they were not necessarily located at the optimal locations.
+        <p>
+          Secondly, autonomous AI is much researched these days. This enables, e.g., smaller robots to work together to
+          solve a larger problem, in addition self-optimizing code, which means that the efficiency of an algorithm
+          written by a human can be improved by an AI. These are only a few of the possibilities with more autonomous
+          AI.
+        </p>
+        <p>
+          As presented by Tzvi Aviv, Founder & CEO at AgriLogicAI, AI can lead to major improvements in the agriculture
+          and food sector. In his presentation he showed that AI can be used in conjunction with geospatial data to
+          increase productivity, profitability and sustainability in the agriculture and food sector. By using remote
+          sensing yield performance of soy varieties, soil data, weather data and genetic data of soy varieties,
+          AgriLogicAi created an Ensemble of Cubist model, a type of rule-based model, model which projected a 5%
+          increase in soy yields by optimizing the selected soy variety given an area. This and other innovations to the
+          agricultural food industry will become more and more important as we are facing a difficult time ahead with
+          more challenging weather conditions.
+        </p>
+        <img src="img1.webp" alt="img-article" class="article-picture" />
+        <p>
+          Nargiz Mammadova, founder & CEO at Destin AI, talked about the use of AI in immigration. To settle down in a
+          new country you would have to fill out many forms and be approved for citizenship through various
+          applications. Yet, before the actual application process, you would have to navigate through the bureaucratic
+          process of identifying and localizing these applications. This is where AI could be helpful, exemplified by
+          the AI assistant Destin AI are currently working on, which can provide and effective interface for users to
+          interact with. The involvement of RPA together with an AI-powered platform could potentially decrease refusal
+          rate and repetitive admin work, in addition to boosting the efficiency and accuracy of information to the
+          user. Furthermore, it could increase the number of applications, approval rate and the speed of the
+          application process. Mammadova also presented the possibility of predicting the outcome of an application and
+          identifying reasons for approval and rejection. As a result, the application reviewers can use more time on
+          the applications that are difficult and require more time to assess.
+
+          <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quibusdam, quidem.</a>
+        </p>
+        <p>
+          Brendan Frey, Co-Founder, CEO at Deep Genomics and Professor at the University of Toronto, provided an insight
+          to AI in the pharmaceutical industry. He pointed out that 65% of all people will be affected by a genetic
+          disease over a lifetime and health budgets in most countries are extremely high. In combination with a rapidly
+          decreasing internal rate of return for research and development in the pharmaceutical industry, the old way of
+          discovering new drugs is broken. AI needs to be further explored in this field and, as mentioned in his paper,
+          can most certainly help with this by aiding in finding new drugs and personalize treatment according a
+          person’s genome. With the human genome mapped and the large amount of datasets available, training sequence
+          models capable of discovering genes with unfavourable traits and mutations is not far from reality.
+        </p>
+        <h3>Optimization and Robutness of Deep Learning</h3>
+        <p>
+          Another big topic in the future of AI is optimization of deep learning and how to make deep neural networks
+          more robust. A known example of how fragile neural networks can be, is this adversarial demonstration from
+          Explaining and Harvesting Adversarial Examples:
+        </p>
+        <img src="img2.webp" alt="" class="ads" />
+        <p>
+          In this example the network can detect the panda in the image to the left. Now, if you alter that picture by
+          adding a toned down image of noise with gibbon-like features, the network will classify the image as a gibbon.
+          However, to the human eye the picture has not been altered at all.
+        </p>
+        <p>
+          Researchers at McGill University are trying to address this by using Lipschitz regularization while performing
+          adversarial training as presented at the REWORK deep learning summit Toronto 2018. The Lipschitz constant
+          measures the amplification factor of a perturbation, and by adding this to the loss function during training
+          of a neural network, one can improve the adversarial attack robustness with a significant amount.
+
+        </p>
+        <p>
+          Another challenge for AI is processing power. In the future we want the machine learning models to run on
+          embedded devices such as phones and in cars, but the amount of processing power currently present in these
+          devices are not on the same level as computers. Snapchat uses neural networks in their filters, and are
+          working on making these networks runnable on your phone. One way Snapchat is trying to solve this issue is by
+          model compression; how can we keep the high accuracy, but lower the computational complexity? Their idea is to
+          use weight sampling, as convolutional filters are, in their words, highly redundant. Snapchat has developed
+          new features, allowing 5x3 (15) weights be condensed to 7 weights, thereby reducing the memory usage by more
+          than 50%. sint nihil alias error deleniti magni, numquam ullam
+          enim blanditiis. Nam eveniet amet possimus saepe consequatur et,
+          inventore minus?
+        </p>
+        <p>
+          The University of Guelph (UoG) are also working on deep learning optimization. ML practitioners often assume
+          they have a 32-bit floating point data type easily accessible. However, by using lower precision one can
+          greatly increase speed and memory advantages. Researchers from UoG are working on methods to train networks
+          with binary weights and activations at run time. In addition to memory advantages and higher speed, they
+          report that the binary networks are also more resistant to adversarial attacks!
+
+        </p>
+        <p>
+          An older paper (2015) from Geoffrey Hinton also touches upon optimization of deep learning by distilling the
+          knowledge from an ensemble of models into a single model, thus reducing the need for multiple models and
+          memory. Maybe this can minimize the need of processing power in the future?
+      </article>
+    </section>
+  </main>
+</body>
+
 </html>
